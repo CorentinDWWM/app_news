@@ -1,1 +1,1 @@
-export const BASE_URL = "https://tp-appnews.onrender.com";
+export const BASE_URL = "https://tpappnews.onrender.com";
