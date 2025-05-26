@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { PostContext } from "../context/postContext";
+import { PostContext } from "../context/PostContext";
 import { addAnNews } from "../api/post.api";
 import { AuthContext } from "../context/AuthContext";
 import toast from "react-hot-toast";
