@@ -13,7 +13,7 @@ app.use(express.static(path.join(__DIRNAME, "/front/dist")));
 
 app.use("/post", postRoutes);
 
-app.get("*", (req, res) => {
+app.get(/(.*)/, (req, res) => {
   res.sendFile(path.join(__DIRNAME, "front", "dist", "index.html"));
 });
 
