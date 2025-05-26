@@ -5,7 +5,7 @@ require("dotenv").config();
 
 const app = express();
 
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: "https://tp-appnews.onrender.com", credentials: true }));
 
 app.use(express.json());
 
@@ -16,6 +16,6 @@ app.use("/post", postRoutes);
 mongoose.connect(process.env.MONGO_URL).then(() => {
   console.log("✅ MongoDB connected");
   app.listen(process.env.PORT, () =>
-    console.log("🚀 Server on http://localhost:3000")
+    console.log(`🚀 Server on ${process.env.PORT}`)
   );
 });
